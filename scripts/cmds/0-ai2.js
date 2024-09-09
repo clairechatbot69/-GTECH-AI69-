@@ -13,7 +13,7 @@ a
         const { response, messageID } = await getAIResponse(question, event.senderID, event.messageID);
         lastResponseMessageID = messageID;
 
-        api.sendMessage(`🤖🥰 | AI TUTEL BOT\n––––––––––––––––\n${response}\n––––––––––––––––––`, event.threadID, messageID);
+        api.sendMessage(`🎀 𝗚𝗘𝗢 𝗧𝗘𝗖𝗛 𝗔𝗜69 🎀\n––––––––––––––––\n${response}\n––––––––––––––––––`, event.threadID, messageID);
     } catch (error) {
         console.error("Error in handleCommand:", error.message);
         message.reply("An error occurred while processing your request.");
@@ -45,7 +45,7 @@ async function fetchFromAI(url, params) {
         const { data } = await axios.get(url, { params });
         if (data && (data.gpt4 || data.reply || data.response || data.answer || data.message)) {
             const response = data.gpt4 || data.reply || data.response || data.answer || data.message;
-            console.log("AI Response:", response);
+            console.log("G1 Response:", response);
             return response;
         } else {
             throw new Error("No valid response from AI");
@@ -69,18 +69,18 @@ async function getAIResponse(input, userId, messageID) {
 
 module.exports = {
     config: {
-        name: 'ai',
-        author: 'coffee',
+        name: 'g1',
+        author: 'GeoBlo',
         role: 0,
         category: 'ai',
-        shortDescription: 'AI to answer any question',
+        shortDescription: 'G1 to answer any question',
     },
     onStart: async function ({ api, event, args }) {
         const input = args.join(' ').trim();
         try {
             const { response, messageID } = await getAIResponse(input, event.senderID, event.messageID);
             lastResponseMessageID = messageID;
-            api.sendMessage(`🤖🥰 | AI TUTEL BOT\n––––––––––––––––\n${response}\n––––––––––––––––––`, event.threadID, messageID);
+            api.sendMessage(`🎀 𝗚𝗘𝗢 𝗧𝗘𝗖𝗛 𝗔𝗜69 🎀\n––––––––––––––––\n${response}\n––––––––––––––––––`, event.threadID, messageID);
         } catch (error) {
             console.error("Error in onStart:", error.message);
             api.sendMessage("An error occurred while processing your request.", event.threadID);
@@ -95,7 +95,7 @@ module.exports = {
             try {
                 const { response, messageID } = await getAIResponse(input, event.senderID, event.messageID);
                 lastResponseMessageID = messageID;
-                api.sendMessage(`🤖🥰 | AI TUTEL BOT\n––––––––––––––––\n${response}\n––––––––––––––––––`, event.threadID, messageID);
+                api.sendMessage(`🎀 𝗚𝗘𝗢 𝗧𝗘𝗖𝗛 𝗔𝗜69 🎀\n––––––––––––––––\n${response}\n––––––––––––––––––`, event.threadID, messageID);
             } catch (error) {
                 console.error("Error in onChat:", error.message);
                 api.sendMessage("An error occurred while processing your request.", event.threadID);
