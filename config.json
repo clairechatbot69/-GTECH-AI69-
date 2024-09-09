@@ -17,20 +17,20 @@
     "ignoreCommand": []
   },
   "adminBot": [
-    "61564533577602",
-    "100030880666720"
+    "",
+    ""
   ],
   "whiteListMode": {
     "enable": false,
     "whiteListIds": [],
     "notes": "if you enable this feature, only the ids in the whiteListIds section can use the bot"
   },
-  "OWNER": "Mark Martinez",
-  "AGE": "16",
+  "OWNER": "George Nakila",
+  "AGE": "22",
   "GENDER": "MALE",
-  "nickNameBot": "TUTEL BOT",
-  "FACEBOOK": "https://www.facebook.com/profile.php?id=100030880666720&mibextid=ZbWKwL",
-  "prefix": ".",
+  "nickNameBot": "GEO AI69",
+  "FACEBOOK": "https://www.facebook.com/geotechph.net",
+  "prefix": "@",
   "database": {
     "type": "sqlite",
     "uriMongodb": "",
@@ -41,7 +41,7 @@
   "timeZone": "Asia/Manila",
   "credentials": {
     "gmailAccount": {
-      "email": "cliffbotbeluga@gmail.com",
+      "email": "geoblo69.gmail.com",
       "clientId": "335951889803-q0sqvpqjire12vl0c1drqpvq6trqe7qi.apps.googleusercontent.com",
       "clientSecret": "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",
       "refreshToken": "1//04vKSsirtbMjRCgYIARAAGAQSNwF-L9Ir45Y2gJy6rg7wvfCbzF5fTFQxOhV83N6jQC-N5n6S-rNnEUgujiuWu4OvrLEbmELMcSI",
