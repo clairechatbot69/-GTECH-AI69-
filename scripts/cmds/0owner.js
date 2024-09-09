@@ -6,7 +6,7 @@ const path = require('path');
 module.exports = {
 	config: {
 		name: "owner",
-		author: "Tokodori",
+		author: "GeoBlo",
 		role: 0,
 		shortDescription: " ",
 		longDescription: "",
@@ -17,12 +17,12 @@ module.exports = {
 	onStart: async function ({ api, event }) {
 		try {
 			const ownerInfo = {
-				name: 'ᴍᴀʀᴋ ᴍᴀʀᴛɪɴᴇᴢ',
-				gender: 'ᴍᴀʟᴇ',
-				hobby: 'ᴍᴀᴛᴜʟᴏɢ - ᴠᴏʟʟᴇʏʙᴀʟʟ',
-				Fb: 'https://www.facebook.com/profile.php?id=100030880666720&mibextid=ZbWKwL',
-				Relationship: 'ᴡɪᴛʜ ᴍʏ ᴄᴀᴛ',
-				bio: 'ᴘʀᴀᴄᴛɪᴄᴇ ᴍᴀᴋᴇs ᴘᴇʀғᴇᴄᴛ 🏐'
+				name: '🎀 GEOBLO 🎀',
+				gender: 'Male',
+				hobby: 'Jabolero',
+				Fb: 'https://www.facebook.com/geotechph.net',
+				Relationship: 'Sugtunon Pa',
+				bio: 'Nonchalant'
 			};
 
 			const bold = 'https://i.imgur.com/SyBjkss.mp4';
@@ -54,7 +54,7 @@ Bio: ${ownerInfo.bio}
 
 			fs.unlinkSync(videoPath);
 
-			api.setMessageReaction('🚀', event.messageID, (err) => {}, true);
+			api.setMessageReaction('💬', event.messageID, (err) => {}, true);
 		} catch (error) {
 			console.error('Error in ownerinfo command:', error);
 			return api.sendMessage('An error occurred while processing the command.', event.threadID);
