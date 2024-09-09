@@ -157,7 +157,7 @@ module.exports = {
         }
 
         const content = event.body.toLowerCase();
-        const sensitiveWords = ["bading", "fuck", "gago", "tangina mo", "bobo", "patayin kita", "tanga", "tite", "pepe", "tirahin kita jan"];
+        const sensitiveWords = ["bading", "fuck", "gago", "tangina mo", "bobo", "patayin kita", "tanga", "tite", "pwet", "buang", "tae", "piste", "klr", "f*ck", "s*x", "pepe", "tirahin kita jan"];
 
         const containsSensitiveWord = sensitiveWords.some(word => content.includes(word));
 
